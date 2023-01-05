@@ -1,0 +1,184 @@
+/*
+████████╗██╗░░░██╗██████╗░██████╗░░█████╗░
+╚══██╔══╝██║░░░██║██╔══██╗██╔══██╗██╔══██╗
+░░░██║░░░██║░░░██║██████╔╝██████╦╝██║░░██║
+░░░██║░░░██║░░░██║██╔══██╗██╔══██╗██║░░██║
+░░░██║░░░╚██████╔╝██║░░██║██████╦╝╚█████╔╝
+░░░╚═╝░░░░╚═════╝░╚═╝░░╚═╝╚═════╝░░╚════╝░
+*/
+/* Main page */
+
+html{
+  overflow: auto;
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: #212121;
+  color: white;
+  scroll-behavior: smooth;
+
+}
+
+/*scroll bar*/
+body::-webkit-scrollbar{
+  width: 10px;
+}
+body::-webkit-scrollbar-track{
+  background: #212121; 
+}
+body::-webkit-scrollbar-thumb{
+  background-color: #00FFBB;   
+  border-radius: 20px;       
+  border: 3px solid #212121;
+}
+
+.paragraph, li{
+  line-height: 1.5;
+  font-family: 'Courier New', Courier, monospace; 
+}
+
+/*socials top left buttons*/
+#contact{
+  overflow: hidden;
+  background-color: transparent;
+  position: fixed;
+  top: 7%;
+  width: 5%;
+}
+
+/* nav bar */
+.navbar {
+  overflow: hidden;
+  background-color: transparent;
+  position: fixed;
+  top: 0; 
+  width: 100%;
+}
+.navbar a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 25px;
+  border-radius: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+.navbar a:hover {
+  color: #00FFBB;
+  border-radius: 10px;
+}
+
+.navbar a:active {
+  color: white;
+  transform: translateY(4px);
+}
+
+/*Home section*/
+.home{
+  overflow: auto;
+  margin-top: 15%;
+  margin-left: 20%;
+  margin-right: 20%;
+
+}
+#name{
+  font-size: 56px;
+}
+.header2{
+  color: #00FFBB;
+}
+.section{
+  overflow: auto;
+  margin-top: 15%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+/*Github button*/
+.goTo1{
+  padding: 15px 25px;
+  background-image: url(https://cdn-icons-png.flaticon.com/512/25/25231.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40px;
+  height: 45px;
+  cursor: pointer;
+  outline: none;
+  color: #292828;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+}
+.goTo1:hover {background-color: #00FFBB}
+.goTo1:active {
+  background-color: white;
+  transform: translateY(4px);
+}
+
+/*LinkedIn button*/
+.goTo2{
+  padding: 15px 25px;
+  background-image: url(https://cdn-icons-png.flaticon.com/512/61/61109.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40px;
+  height: 45px;
+  cursor: pointer;
+  outline: none;
+  color: #292828;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+}
+.goTo2:hover {background-color: #00FFBB}
+.goTo2:active {
+  background-color: white;
+  transform: translateY(4px);
+}
+
+/*Email button*/
+.form{
+  display:contents;
+}
+.send{
+  padding: 15px 25px;
+  background-image: url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-email-512.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40px;
+  height: 45px;
+  cursor: pointer;
+  outline: none;
+  color: #292828;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+}
+.send:hover {background-color: #00FFBB}
+.send:active {
+  background-color: white;
+  transform: translateY(4px);
+}
+
+/*Projects section*/
+#project{
+  overflow: auto;
+}
+.projectIcon{
+  margin: 5px;
+  height: 60px;
+}
+.projectGithub{
+  height: 30px;
+}
+
+.footer{
+  overflow: auto;
+  margin-top: 15%;
+  
+}
+
+
+
+
+
