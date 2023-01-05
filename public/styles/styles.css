@@ -88,8 +88,8 @@ body::-webkit-scrollbar-thumb{
   color: #00FFBB;
 }
 #homeImg{
-  height: 400px;
-  width:400px;
+  height: 100px;
+  width: 100px;
 }
 .section{
   overflow: auto;
