@@ -87,10 +87,6 @@ body::-webkit-scrollbar-thumb{
 .header2{
   color: #00FFBB;
 }
-#homeImg{
-  height: 100px;
-  width: 100px;
-}
 .section{
   overflow: auto;
   margin-top: 15%;
