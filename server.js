@@ -14,7 +14,7 @@ app.use(express.static(__dirname + '/public')) //static server
 
 app.get('/', function(request, response) {
   console.log('Welcome')
-  response.sendFile(__dirname + '/views/index.html')
+  response.sendFile(__dirname + '/index.html')
 })
 
 
