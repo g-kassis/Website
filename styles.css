@@ -1,0 +1,215 @@
+html{
+    scroll-behavior:smooth;
+    background-color: #0f0f0f;
+    overflow-x: hidden;
+}
+
+
+/*scroll bar*/
+body::-webkit-scrollbar{
+    width: 10px;
+  }
+  body::-webkit-scrollbar-track{
+    background: #212121; 
+  }
+  body::-webkit-scrollbar-thumb{
+    background-color: #a0a0a0;   
+    border-radius: 20px;       
+    border: 3px solid #212121;
+  }
+
+
+body{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: black;
+  /* background-image: url(static/pyramids.jpeg); */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0%;
+  padding-bottom:1%;
+  color: white;
+}
+
+
+p{
+  color: #8E8E8E;
+}
+
+
+.pfp{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.socials{
+  width: 100%;
+  height: auto;
+  padding-top: 4%;
+  word-spacing: 15px;
+  text-align: center;
+  position: relative;
+    
+}
+
+.body-row{
+  margin: 2%;
+  margin-right: 0;
+  margin-top: 0;
+}
+
+.leftcolumn {
+  float: left;
+  width: 25%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 75%;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.flip{
+  transition: 0.7s ease-in-out;
+  transform: rotateY(360deg);
+}
+
+
+/* header image */
+.header {
+  width: 100%;
+  height: auto;
+  background: url(static/pyramids.jpeg) no-repeat center;
+  background-position-y: -170;
+  background-size:cover;
+  border-radius: 20px;
+  padding-bottom: 2px;
+  margin-bottom: 5%;
+  overflow: hidden;
+}
+
+.home-header{
+  height: 600px;
+  background-position-y: 0;
+  margin-bottom: 0;
+
+}
+
+.headline {
+  padding-left: 5%;
+  width: 100%;
+  text-align: left;
+  display: block;
+}
+
+/* Add a card effect for articles */
+.body-card {
+  background-color: #121212;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+/* Clear floats after the columns */
+.body-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  border-radius: 20px;
+  margin: 2%;
+  padding: 20px;
+  text-align: center;
+  background: #121212;
+  margin-top: 20px;
+  margin-bottom: 2%;
+}
+
+.gradient-text{
+  font-family:"Abril Fatface", sans-serif;
+  background: linear-gradient(to right, #803ca8, pink,#f7858d);
+  background-size: 200% 200%;
+  animation: rainbow 2s ease-in-out infinite;
+  background-clip: text;
+  -webkit-background-clip:text;
+  color:white;
+  text-align:center;
+  transition: color .2s ease-in-out;
+  text-transform:uppercase;
+  font-weight:900;
+  font-size: large;
+  margin: 2%;
+}
+
+.gradient-text:hover{
+  cursor:pointer;
+  transform: scale(1);
+  color:rgba(0,0,0,0);
+}
+@keyframes rainbow { 
+  0%{background-position:left}
+  50%{background-position:right}
+  100%{background-position:left}
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+
+/* Float four columns side by side */
+.card-column {
+  border-radius: 20px;
+  float: left;
+  width: calc(33% - 40px); 
+  margin: 20px; 
+  
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.card-row {
+  max-height: 230px; /* Set the maximum height for vertical scrolling */
+  overflow-y: auto; 
+  border-radius: 20px;
+}
+
+/* Clear floats after the columns */
+.card-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card-card {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 12px;
+  text-align: left;
+  background-color: transparent;
+  
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .card-column {
+    width: calc(100% - 40px); 
+    display: block;
+    margin-bottom: 20px;
+  }
+}
